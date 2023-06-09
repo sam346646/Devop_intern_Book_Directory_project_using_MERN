@@ -35,7 +35,7 @@ function UpdateBook() {
 
     const Update = (event) => {
         event.preventDefault();
-        useEffect(() => {
+       
             const data = {
                 title: title,
                 category: category,
@@ -45,7 +45,7 @@ function UpdateBook() {
             }
             Axios.put(`http://localhost:8000/update_book/${id}`, data);
             navigate("/");
-        }, [])
+        
     }
 
 
@@ -91,7 +91,7 @@ function UpdateBook() {
 
                     <div className="form-group mb-3">
                         <label className="form-label"></label>
-                        <input type="submit" onClick={Update} name="submit" value="Update product" className="form-control btn btn-success" />
+                        <input type="submit" onClick={Update} name="submit" value="Update book" className="form-control btn btn-success" />
                     </div>
                 </form>
             </div >

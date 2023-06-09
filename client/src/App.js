@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './assets/css/mystyle.css';
 
-import Footer from "./pages/Footer";
 import Dashboard from "./pages/Dashboard";
 import Navbar from "./pages/Navbar";
 import InsertBook from "./pages/InsertBook";
@@ -15,17 +14,15 @@ import UpdateBook from "./pages/UpdateBook";
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-
-      <Route path="/" element={<Navbar />}>
-        <Route index element={<Dashboard />} />
-        <Route path="InsertBook" element={<InsertBook />} />
-        <Route path="DeleteBook/:id" element={<DeleteBook />} />
-        <Route path="UpdateBook/:id" element={<UpdateBook />} />
-      </Route>
-   
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<Dashboard />} />
+          <Route path="InsertBook" element={<InsertBook />} />
+          <Route path="DeleteBook/:id" element={<DeleteBook />} />
+          <Route path="UpdateBook/:id" element={<UpdateBook />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

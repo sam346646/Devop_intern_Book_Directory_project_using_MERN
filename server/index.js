@@ -102,7 +102,7 @@ app.delete("/delete_book/:id", (request, response) => {
 })
 
 
-app.put("/product/update_book/:id", (request, response) => {
+app.put("/update_book/:id", (request, response) => {
     const id = request.params.id;
     Book.findByIdAndUpdate(id, request.body)
         .then(data => {

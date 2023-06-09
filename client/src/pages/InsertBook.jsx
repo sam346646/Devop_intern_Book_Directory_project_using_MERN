@@ -44,6 +44,7 @@ function InsertBook() {
                                     return (
                                         <option value='History'> History </option>
                                         <option value='Science'> Science </option>
+                                        <option value='Novel'> Novel </option>
                                         <option value='Other'> Other </option>
                                     )
                 
@@ -65,14 +66,9 @@ function InsertBook() {
                         <input type="text" name="publication" value={publication} onChange={(e) => setPublication(e.target.value)} className="form-control" required />
                     </div>
 
-                    {/* <div className="form-group mb-3">
-                        <label className="form-label">Product Image1</label>
-                        <input type="file" onChange={handleFile} className="form-control" required />
-                    </div> */}
-
                     <div className="form-group mb-3">
                         <label className="form-label"></label>
-                        <input type="submit" onClick={insertBook} name="submit" value="Insert product" className="form-control btn btn-success" />
+                        <input type="submit" onClick={insertBook} name="submit" value="Insert book" className="form-control btn btn-success" />
                     </div>
                 </form>
             </div >

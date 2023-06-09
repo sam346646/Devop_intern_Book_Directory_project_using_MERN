@@ -21,19 +21,19 @@ function Navbar() {
                         </li>
                         
                         <li className="nav-item">
-                            <NavLink to="/InsertBook" className="nav-link">
+                            <NavLink to="/InsertBook" className="nav-link text-light">
                                 <i className="fa fa-pencil"></i> Insert
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
-                            <NavLink to="/update" className="nav-link">
+                            <NavLink to="/" className="nav-link text-light">
                                 <i className="fa fa-pencil-square-o"></i> Update
                             </NavLink>
                         </li>
 
                         <li className="nav-item">
-                            <NavLink to="/update" className="nav-link">
+                            <NavLink to="/" className="nav-link text-light">
                             <i className="fa fa-trash-o"></i> Delete
                             </NavLink>
                         </li>
